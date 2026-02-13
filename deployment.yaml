@@ -1,21 +1,21 @@
-apiVersion: apps/v1
+appVersion: appps/v1 
 kind: Deployment
-metadata:
-  name: k8s-deployment
-  namespace: default
-spec: 
-  replicas: 1
-  selector:
-    matchLabels:
-      app: k8s-deployment
+metadata: 
+  name: my-first-k8-deployment
+spec:
+  selectors:
+     matchLabel:
+       app:  k8-app
+  replicas: 2
   template:
-    metadata:
+    metadata: 
       labels:
-        app: k8s-deployment
-    spec:
-      containers: 
-        - name: k8s-deployment
-          image: rwigara/k8s-app:latest
-          ports:
+        app: k8-app
+    spec: 
+      containers:
+         - name: k8-app
+           image: rwigara/k8s-app:latets
+           ports:
             - containerPort: 3000
+
 
