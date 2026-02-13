@@ -1,9 +1,9 @@
-appVersion: apps/v1 
+apiVersion: apps/v1 
 kind: Deployment
 metadata: 
   name: my-first-k8-deployment
 spec:
-  selectors:
+  selector:
      matchLabel:
        app:  k8-app
   replicas: 2
