@@ -1,4 +1,4 @@
-appVersion: appps/v1 
+appVersion: apps/v1 
 kind: Deployment
 metadata: 
   name: my-first-k8-deployment
