@@ -4,7 +4,7 @@ metadata:
   name: my-first-k8-deployment
 spec:
   selector:
-     matchLabel:
+     matchLabels:
        app:  k8-app
   replicas: 2
   template:
